@@ -1,0 +1,87 @@
+:root {
+    --background-color: #15171E;
+    --stroke-color: #282D3E;
+    --button-color: #3F64DF;
+    --heading-color: #FFFFFF;
+    --paragraph-color: #CFCFCF;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-image: url(/Assets/background.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+
+
+.card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    border: #282D3E 1px solid;
+    stroke-linecap: round ;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--paragraph-color);
+    width: 100%;
+}
+
+.card .img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.user-input {
+    margin: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    border: var(--stroke-color) 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    color: var(--paragraph-color);
+    width: 60vw;
+}
+
+#main-paragraph {
+    font-size: 20px;
+    color: var(--paragraph-color);
+    
+
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+    body {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20%;
+        padding-right: 20%;
+
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    body {
+        padding: 25px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+}
+
